@@ -1,0 +1,63 @@
+body {
+	font-family: "Roboto";font-size: 7px;
+}
+
+table {
+	font-family: "Roboto";
+	font-size: 11px;
+}
+table.tabel_isi {
+	font-size:11px;
+	border-bottom: 5px hidden;
+	border-top: 5px hidden;
+	border-left: 5px hidden;
+	border-right: 5px hidden;
+}
+table.tabel_isi th {
+	border-bottom: 5px hidden;
+	border-top: 5px hidden;
+	border-left: 5px hidden;
+	border-right: 5px hidden;
+}
+table.tabel_isi td {
+	border-bottom: 5px hidden;
+	border-top: 5px hidden;
+	border-left: 5px hidden;
+	border-right: 5px hidden;
+}
+page[size="A4"] {
+	background: white;
+	width: 21cm;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	margin-bottom:0.5cm;
+	border:1px solid #dadada;
+	page-break-after: always;
+	clear: both;
+}
+@media print {
+	body, page[size="A4"]{
+		margin: 0;
+		padding-left: 0px;
+		padding-right: 0px;
+		border:0px solid #dadada;
+	}
+	table.tabel_isi {
+		font-size:11px;
+		border-style: 5px solid red;
+	}
+	table.tabel_isi th {
+		border-style: 5px solid red;
+	}
+	td.v {
+		border-bottom: 5px hidden;
+		border-top: 5px hidden;
+		border-left: 5px hidden;
+		border-right: 5px hidden;
+	}
+
+}
